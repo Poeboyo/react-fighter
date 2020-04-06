@@ -109,6 +109,7 @@ getCharacterById = async (req, res) => {
 getCharacters = async (req, res) => {
   await Character.find({}, (err, character) => {
     if (err) {
+      console.log("I never made it to the DataBase");
       return res.status(400).json({ success: false, error: err });
     }
     if (!character.length) {
