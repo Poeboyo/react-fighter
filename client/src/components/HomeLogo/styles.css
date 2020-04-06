@@ -1,0 +1,35 @@
+/* Home Page CSS */
+#homepage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#lightningLeft {
+  margin-left: -14%;
+  position: absolute;
+  width: auto;
+  height: 33%;
+}
+#lightningRight {
+  margin-left: 12%;
+  position: absolute;
+  height: 33%;
+  width: auto;
+  transform: scaleX(-1);
+}
+
+#logo {
+  margin-top: 15%;
+  width: 45%;
+  height: 33%;
+  margin-left: 24%;
+  margin-right: 24%;
+}
+#pulse {
+  position: absolute;
+  justify-content: end;
+  margin-top: 14%;
+  width: 45%;
+}
