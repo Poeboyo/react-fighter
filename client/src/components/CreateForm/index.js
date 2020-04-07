@@ -45,6 +45,9 @@ function CreateForm() {
       <form id="character-form">
         <Row id="characterName">
           <TextInput
+            s={6}
+            m={6}
+            l={6}
             placeholder="Character Name"
             className="white"
             id="characterNameInput"
@@ -53,6 +56,9 @@ function CreateForm() {
 
         <Row id="characterImage">
           <TextInput
+            s={6}
+            m={6}
+            l={6}
             id="characterImageInput"
             placeholder="Character Image URL"
             className="white"
