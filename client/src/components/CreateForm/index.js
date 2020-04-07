@@ -2,6 +2,8 @@ import React from "react";
 import Select from "react-select";
 import "./styles.css";
 import { Button, TextInput, Row, Col, Icon } from "react-materialize";
+import createLogo from "../../assets/images/characterCreate.png";
+import brain from "../../assets/images/brain.gif";
 
 const options = [
   { value: 1, label: "1" },
@@ -33,43 +35,41 @@ const options = [
 
 function CreateForm() {
   return (
-    <div>
-      <img src="./images/brain.gif" id="brain" alt="brain"></img>
+    <div id="flex-form">
+      <img src={brain} id="brain" alt="brain"></img>
       <img
-        src="./images/characterCreate.png"
+        src={createLogo}
         id="create-your-character"
         alt="character create"
       ></img>
-      <form className="charForm">
-        <Row className="center-align " id="characterName">
+      <form id="character-form">
+        <Row id="characterName">
           <TextInput
             placeholder="Character Name"
             className="white"
-            s={8}
             id="characterNameInput"
           />
         </Row>
 
-        <Row className="center-align text-white" id="characterImage">
+        <Row id="characterImage">
           <TextInput
             id="characterImageInput"
             placeholder="Character Image URL"
             className="white"
-            s={8}
           />
         </Row>
 
         <Row id="selections">
-          <Col className=" black-text white" s={2} id="attack">
+          <Col className=" black-text white" id="attack">
             <Select placeholder="Attack" options={options} />
           </Col>{" "}
-          <Col className=" black-text white" s={2} id="defense">
+          <Col className=" black-text white" id="defense">
             <Select options={options} placeholder="Defense" />
           </Col>{" "}
-          <Col className=" black-text white" s={2} id="speed">
+          <Col className=" black-text white" id="speed">
             <Select options={options} placeholder="Speed" />
           </Col>{" "}
-          <Col className=" black-text white" s={2} id="evasion">
+          <Col className=" black-text white" id="evasion">
             <Select options={options} placeholder="Evasion" />
           </Col>
         </Row>

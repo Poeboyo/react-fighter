@@ -1,0 +1,19 @@
+#flex-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+#create-your-character {
+  width: 41.5%;
+  align-self: center;
+}
+
+#brain {
+  width: 25%;
+  align-self: center;
+}
+#characterName {
+  width: 100%;
+}
