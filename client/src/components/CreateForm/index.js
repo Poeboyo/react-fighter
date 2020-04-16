@@ -1,7 +1,7 @@
 import React from "react";
 import Select from "react-select";
 import "./styles.css";
-import { Button, TextInput, Row, Col, Icon } from "react-materialize";
+import { Button, TextInput, Row, Col, Icon, Dropdown } from "react-materialize";
 import createLogo from "../../assets/images/characterCreate.png";
 import brain from "../../assets/images/brain.gif";
 
@@ -33,7 +33,7 @@ const options = [
   { value: 25, label: "25" },
 ];
 
-function CreateForm() {
+function CreateForm(props) {
   return (
     <div id="flex-form">
       <img src={brain} id="brain" alt="brain"></img>
@@ -66,18 +66,53 @@ function CreateForm() {
         </Row>
 
         <Row id="selections">
-          <Col className=" black-text white" id="attack">
-            <Select placeholder="Attack" options={options} />
-          </Col>{" "}
-          <Col className=" black-text white" id="defense">
-            <Select options={options} placeholder="Defense" />
-          </Col>{" "}
-          <Col className=" black-text white" id="speed">
-            <Select options={options} placeholder="Speed" />
-          </Col>{" "}
-          <Col className=" black-text white" id="evasion">
-            <Select options={options} placeholder="Evasion" />
-          </Col>
+          <Dropdown
+            id="Dropdown_6"
+            options={{
+              alignment: "left",
+              autoTrigger: true,
+              closeOnClick: true,
+              constrainWidth: true,
+              container: null,
+              coverTrigger: true,
+              hover: false,
+              inDuration: 150,
+              onCloseEnd: null,
+              onCloseStart: null,
+              onOpenEnd: null,
+              onOpenStart: null,
+              outDuration: 250,
+            }}
+            trigger={<Button node="button">Drop Me!</Button>}
+          >
+            <a href="#" value={1}>
+              1
+            </a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+            <a href="#">5</a>
+          </Dropdown>
         </Row>
         <Row>
           <Button
