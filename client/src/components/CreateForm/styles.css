@@ -16,4 +16,5 @@
 }
 #characterNameInput {
   justify-items: right;
+  display: flex;
 }
